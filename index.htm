@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <title>Opgave 3</title>
+</head>
+
+<body>
+
+  <h1>String manipulations</h1>
+
+  <div id="app">
+    <input type="text" v-model="wordInput" placeholder="string">
+    <select v-model="selected">
+      <option value="Uppercase">Uppercase</option>
+      <option value="Lowercase">Lowercase</option>
+    </select>
+
+    <button v-on:click="manipulateText()" class="btn btn-primary" id="submit">Do it!</button>
+    <div id="output"></div>
+  </div>
+
+
+
+
+  
+  <script src="bundle.js"></script>
+</body>
+</html>
